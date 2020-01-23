@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/post.js`),
       path: '/posts/' + friendlyPageName,
       context: {
-        edited: node.edited
+        lastmoddate: node.edited
       },
     })
   })
